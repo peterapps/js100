@@ -5,8 +5,7 @@ A web implementation of ase100.
 - [x] Assembly
 - [x] CPU emulation
 - [x] Memory emulation
-- [x] Writing to VGA monitor
-- [x] Reading to VGA monitor
+- [x] VGA monitor
 - [x] DE2 board switches
 - [x] Hex displays
 - [x] LEDs
