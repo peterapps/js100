@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js100</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./js/assemble.js"></script>
+    <script type="text/javascript" src="./js/memory.js"></script>
+    <script type="text/javascript" src="./js/vga.js"></script>
+    <script type="text/javascript" src="./js/cpu.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+    <h1>js100</h1>
+    <h3>A web implementation of ase100</h3>
+    <form action="" id="form">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Main ".e" file
+                    </th>
+                    <th>All other ".e" files</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="file" id="main_file" accept=".e" />
+                    </td>
+                    <td>
+                        <input type="file" id="supp_files" accept=".e" multiple>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <input type="submit" value="Assemble" />
+            <input type="button" value="Load" id="load_btn" />
+            <input type="button" value="Run" id="run_btn" />
+        </div>
+        <div id="msg">
+            
+        </div>
+    </form>
+
+    <canvas id="canvas" width="640" height="480"></canvas>
+</body>
+</html>
