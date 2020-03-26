@@ -4,10 +4,10 @@ var mif = [];
 
 function message(txt){
     document.getElementById("msg").innerHTML = txt;
+    console.log(txt);
 }
 
 function assemble(file_txt){
-    console.log(file_txt);
     var lines = file_txt.split("\n"); // Lines of assembly file
 
     mif = []; // Memory image

@@ -23,6 +23,7 @@ function vgaDriver(){
             memory[0x80000068] = vga_data[vga_x1 + vga_y1*640];
         } else { // vga_write == 1
             var color = memory[0x80000067];
+            vga_data[vga_x1 + vga_y1*640] = color;
             var r = (color >> 16) & 0xff;
             var g = (color >> 8) & 0xff;
             var b = color & 0xff;

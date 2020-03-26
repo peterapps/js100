@@ -29,6 +29,5 @@ var memory = false;
 
 function handleLoad(){
     memory = new Memory();
-    console.log(mif);
     message("Loaded into memory.");
 }

@@ -6,11 +6,11 @@ A web implementation of ase100.
 - [x] CPU emulation
 - [x] Memory emulation
 - [x] Writing to VGA monitor
-- [ ] Reading to VGA monitor
-- [ ] DE2 board switches
-- [ ] Hex displays
-- [ ] LEDs
-- [ ] Clock
+- [x] Reading to VGA monitor
+- [x] DE2 board switches
+- [x] Hex displays
+- [x] LEDs
+- [x] Clock
 - [ ] SDRAM
 - [ ] Speaker
 - [ ] SD card

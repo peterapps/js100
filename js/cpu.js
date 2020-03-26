@@ -17,6 +17,7 @@ function handleRun(){
 function cpuCycle(){
     for (var i = 0; i < 133; ++i){
         executeOp();
+        basicIODriver();
         vgaDriver();
     }
 

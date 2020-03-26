@@ -25,3 +25,13 @@ div {
 #msg {
     color: green;
 }
+
+.sw_off {
+    background: #333333;
+    height: 20px;
+}
+
+.sw_on {
+    height: 20px;
+    background: green;
+}

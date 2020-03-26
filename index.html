@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script type="text/javascript" src="./js/assemble.js"></script>
     <script type="text/javascript" src="./js/memory.js"></script>
+    <script type="text/javascript" src="./js/basic_io.js"></script>
     <script type="text/javascript" src="./js/vga.js"></script>
     <script type="text/javascript" src="./js/cpu.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
@@ -13,6 +14,9 @@
 <body>
     <h1>js100</h1>
     <h3>A web implementation of ase100</h3>
+    <div id="msg">
+        Select your ".e" files to begin.
+    </div>
     <form action="" id="form">
         <table>
             <thead>
@@ -21,6 +25,9 @@
                         Main ".e" file
                     </th>
                     <th>All other ".e" files</th>
+                    <th>
+                        Actions
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -31,19 +38,49 @@
                     <td>
                         <input type="file" id="supp_files" accept=".e" multiple>
                     </td>
+                    <td>
+                        <input type="submit" value="Assemble" />
+                        <input type="button" value="Load" id="load_btn" />
+                        <input type="button" value="Run" id="run_btn" />
+                    </td>
                 </tr>
             </tbody>
         </table>
-        <div>
-            <input type="submit" value="Assemble" />
-            <input type="button" value="Load" id="load_btn" />
-            <input type="button" value="Run" id="run_btn" />
-        </div>
-        <div id="msg">
-            
-        </div>
     </form>
 
+    <table>
+        <thead>
+            <tr>
+                <th>HEX7-HEX4</th>
+                <th>HEX3-HEX0</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="hex30">0000</td>
+                <td id="hex74">0000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr id="num_labels">
+                <td></td>
+            </tr>
+            <tr id="ledg_row">
+                <th>LEDG</th>
+            </tr>
+            <tr id="ledr_row">
+                <th>LEDR</th>
+            </tr>
+            <tr id="sw_row">
+                <th>SW</th>
+            </tr>
+        </tbody>
+    </table>
+
     <canvas id="canvas" width="640" height="480"></canvas>
+
 </body>
 </html>
