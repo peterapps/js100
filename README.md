@@ -1,5 +1,5 @@
 # js100
-A web implementation of ase100.
+A web implementation of ase100. View the [live demo here](https://raw.githack.com/peterapps/js100/master/index.html).
 
 # Progress
 - [x] Assembly
