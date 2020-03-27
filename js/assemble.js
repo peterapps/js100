@@ -5,7 +5,7 @@ var labels = {};
 
 function message(txt){
     document.getElementById("msg").innerHTML = txt;
-    console.log(txt);
+    //console.log(txt);
 }
 
 function assemble(file_txt){

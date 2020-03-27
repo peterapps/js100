@@ -14,6 +14,7 @@ function handleRun(){
     serialSendInit();
     sdramInit();
     sdcardInit();
+    audioReset();
     requestAnimationFrame(cpuCycle);
 }
 
@@ -26,6 +27,12 @@ function cpuCycle(){
         serialSendDriver();
         touchDriver();
         sdcardDriver();
+        audioDriver();
+        if (!running) break;
+    }
+    if (audioBuffer.length > 0){
+        audioPlay();
+        audioReset();
     }
 
     if (running) requestAnimationFrame(cpuCycle);

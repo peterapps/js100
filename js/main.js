@@ -4,6 +4,7 @@ window.addEventListener("load", function(){
     document.getElementById("run_btn").addEventListener("click", handleRun, false);
     basicIOInit();
     touchInit();
+    audioInit();
 }, false);
 
 function handleSubmit(event){
