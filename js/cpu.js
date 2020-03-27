@@ -13,6 +13,7 @@ function handleRun(){
     vgaInit();
     serialSendInit();
     sdramInit();
+    sdcardInit();
     requestAnimationFrame(cpuCycle);
 }
 
@@ -23,6 +24,8 @@ function cpuCycle(){
         vgaDriver();
         sdramDriver();
         serialSendDriver();
+        touchDriver();
+        sdcardDriver();
     }
 
     if (running) requestAnimationFrame(cpuCycle);

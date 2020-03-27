@@ -3,6 +3,7 @@ window.addEventListener("load", function(){
     document.getElementById("load_btn").addEventListener("click", handleLoad, false);
     document.getElementById("run_btn").addEventListener("click", handleRun, false);
     basicIOInit();
+    touchInit();
 }, false);
 
 function handleSubmit(event){

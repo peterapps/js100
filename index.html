@@ -12,6 +12,8 @@
     <script type="text/javascript" src="./js/vga.js"></script>
     <script type="text/javascript" src="./js/serial.js"></script>
     <script type="text/javascript" src="./js/sdram.js"></script>
+    <script type="text/javascript" src="./js/touch.js"></script>
+    <script type="text/javascript" src="./js/sdcard.js"></script>
 
     <script type="text/javascript" src="./js/cpu.js"></script>
 
@@ -31,9 +33,6 @@
                         Main ".e" file
                     </th>
                     <th>All other ".e" files</th>
-                    <th>
-                        Actions
-                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -44,10 +43,19 @@
                     <td>
                         <input type="file" id="supp_files" accept=".e" multiple>
                     </td>
+                </tr>
+                <tr>
+                    <th>Actions</th>
+                    <th>SD card ".raw" file</th>
+                </tr>
+                <tr>
                     <td>
                         <input type="submit" value="Assemble" />
                         <input type="button" value="Load" id="load_btn" />
                         <input type="button" value="Run" id="run_btn" />
+                    </td>
+                    <td>
+                        <input type="file" id="sd_file" accept=".raw" />
                     </td>
                 </tr>
             </tbody>

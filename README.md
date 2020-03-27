@@ -11,7 +11,7 @@ A web implementation of ase100. View the [live demo here](https://raw.githack.co
 - [x] LEDs
 - [x] Clock
 - [x] SDRAM
+- [x] SD card
+- [x] Serial console send
+- [x] Touchscreen
 - [ ] Speaker
-- [ ] SD card
-- [x] Serial console
-- [ ] Touchscreen
