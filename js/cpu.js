@@ -15,6 +15,7 @@ function handleRun(){
     sdramInit();
     audioReset();
     lcdInit();
+    cameraInit();
     requestAnimationFrame(cpuCycle);
 }
 
@@ -31,6 +32,7 @@ function cpuCycle(){
         keyboardDriver();
         serialReceiveDriver();
         lcdDriver();
+        cameraDriver();
         if (!running) break;
     }
     if (audioBuffer.length > 0){
