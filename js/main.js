@@ -11,7 +11,7 @@ function handleSubmit(event){
     var file_txt = "";
     var files = [document.getElementById("main_file").files[0]];
     var supp_files = document.getElementById("supp_files").files;
-    for (var i = 0; i < supp_files.length; ++i) files.push(supp_files[0]);
+    for (var i = 0; i < supp_files.length; ++i) files.push(supp_files[i]);
 
     var j = 0;
     for (var i = 0; i < files.length; ++i){

@@ -11,6 +11,8 @@ function handleRun(){
     running = true;
     document.getElementById("run_btn").value = "Stop";
     vgaInit();
+    serialSendInit();
+    sdramInit();
     requestAnimationFrame(cpuCycle);
 }
 
@@ -19,6 +21,8 @@ function cpuCycle(){
         executeOp();
         basicIODriver();
         vgaDriver();
+        sdramDriver();
+        serialSendDriver();
     }
 
     if (running) requestAnimationFrame(cpuCycle);
@@ -49,6 +53,7 @@ function executeOp(){
             break;
         case 4: // div
             memory[arg1] = memory[arg2] / memory[arg3];
+            memory[arg1] |= 0;
             break;
         case 5: // cp
             memory[arg1] = memory[arg2];

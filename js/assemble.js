@@ -1,6 +1,7 @@
 var opcodes = ["halt","add","sub","mult","div","cp","and","or","not","sl","sr","cpfa","cpta","be","bne","blt","call","ret"];
 var op_arg_nums = [0, 3, 3, 3, 3, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 2, 1];
 var mif = [];
+var labels = {};
 
 function message(txt){
     document.getElementById("msg").innerHTML = txt;
@@ -11,7 +12,7 @@ function assemble(file_txt){
     var lines = file_txt.split("\n"); // Lines of assembly file
 
     mif = []; // Memory image
-    var labels = {}; // Dictionary mapping labels to addresses
+    labels = {}; // Dictionary mapping labels to addresses
 
     for (var i = 0; i < lines.length; ++i){
         if (lines[i].charAt(0) == "#" || lines[i].length == 0) continue; // ignore #include statements

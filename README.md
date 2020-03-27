@@ -10,8 +10,8 @@ A web implementation of ase100. View the [live demo here](https://raw.githack.co
 - [x] Hex displays
 - [x] LEDs
 - [x] Clock
-- [ ] SDRAM
+- [x] SDRAM
 - [ ] Speaker
 - [ ] SD card
-- [ ] Serial console
+- [x] Serial console
 - [ ] Touchscreen
