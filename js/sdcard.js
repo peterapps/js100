@@ -3,6 +3,8 @@ var sdcard_data = [];
 function sdcardInit(){
     var files = document.getElementById("sd_file").files;
     if (files.length == 0){
+        message("No SD card data file specified.");
+        running = false;
         return;
     }
     var reader = new FileReader();
@@ -16,11 +18,8 @@ function sdcardDriver(){
     if (memory[0x80000080] == 0){ // sd_command == 0
         memory[0x80000081] = 0; // sd_response == 0
     } else { // sd_command == 1
-        if (sdcard_data.length == 0){
-            message("No SD card data file specified.");
-            running = false;
-            return;
-        }
+        if (sdcard_data.length == 0) sdcardInit();
+        
         var address = memory[0x80000083];
         if (memory[0x80000082] == 0){ // sd_write == 0
             memory[0x80000085] = sdcard_data[address];

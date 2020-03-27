@@ -2,9 +2,21 @@ body {
     font-family: sans-serif;
 }
 
-canvas {
+#canvas {
     height: 240px;
     background: gray;
+    margin: 5px;
+}
+
+#hex30, #hex74 {
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+}
+
+#lcd {
+    height: 60px;
+    background-color: black;
     margin: 5px;
 }
 
@@ -16,6 +28,7 @@ table {
 th, td {
     border: 1px solid black;
     padding: 5px;
+    text-align: center;
 }
 
 #msg {

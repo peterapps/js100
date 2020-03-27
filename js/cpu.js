@@ -13,8 +13,8 @@ function handleRun(){
     vgaInit();
     serialSendInit();
     sdramInit();
-    sdcardInit();
     audioReset();
+    lcdInit();
     requestAnimationFrame(cpuCycle);
 }
 
@@ -30,6 +30,7 @@ function cpuCycle(){
         audioDriver();
         keyboardDriver();
         serialReceiveDriver();
+        lcdDriver();
         if (!running) break;
     }
     if (audioBuffer.length > 0){

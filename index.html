@@ -16,6 +16,7 @@
     <script type="text/javascript" src="./js/sdcard.js"></script>
     <script type="text/javascript" src="./js/audio.js"></script>
     <script type="text/javascript" src="./js/keyboard.js"></script>
+    <script type="text/javascript" src="./js/lcd.js"></script>
 
     <script type="text/javascript" src="./js/cpu.js"></script>
 
@@ -65,21 +66,6 @@
     </form>
 
     <table>
-        <thead>
-            <tr>
-                <th>HEX7-HEX4</th>
-                <th>HEX3-HEX0</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="hex74">0000</td>
-                <td id="hex30">0000</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table>
         <tbody>
             <tr id="num_labels">
                 <td></td>
@@ -92,6 +78,25 @@
             </tr>
             <tr id="sw_row">
                 <th>SW</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HEX7-HEX4</th>
+                <th>HEX3-HEX0</th>
+                <th>LCD Display</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="hex74">0000</td>
+                <td id="hex30">0000</td>
+                <td>
+                    <canvas id="lcd" width="340" height="60"></canvas>
+                </td>
             </tr>
         </tbody>
     </table>
