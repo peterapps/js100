@@ -19,9 +19,9 @@ This is not actually a port of ase100, but rather an emulator of the E100 built 
 - [x] Speaker (but buggy)
 - [x] PS/2 keyboard
 - [x] Serial receive
+- [x] USB mouse
 
 # TODO
-- [ ] USB mouse
 - [ ] LCD display
 - [ ] Fix speaker output
 - [ ] Camera
