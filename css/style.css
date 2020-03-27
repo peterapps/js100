@@ -56,5 +56,6 @@ th, td {
 
 textarea {
     font-family: monospace;
-    width: 320px;
+    width: 240px;
+    height: 64px;
 }

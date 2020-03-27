@@ -18,6 +18,7 @@
     <script type="text/javascript" src="./js/keyboard.js"></script>
     <script type="text/javascript" src="./js/lcd.js"></script>
     <script type="text/javascript" src="./js/camera.js"></script>
+    <script type="text/javascript" src="./js/mic.js"></script>
 
     <script type="text/javascript" src="./js/cpu.js"></script>
 
@@ -25,12 +26,17 @@
 </head>
 <body>
     <h1>js100</h1>
-    <h3>A web implementation of ase100</h3>
+    <h3>
+        A web implementation of ase100.
+        View the
+        <a href="https://github.com/peterapps/js100">source code</a>
+        on GitHub.
+    </h3>
     <div id="msg">
         Select your ".e" files to begin.
     </div>
     <form action="" id="form">
-        <table>
+        <table style="float:left">
             <thead>
                 <tr>
                     <th>
@@ -64,9 +70,28 @@
                 </tr>
             </tbody>
         </table>
+
+        <table style="float:right">
+            <thead>
+                <tr>
+                    <th>HEX7-HEX4</th>
+                    <th>HEX3-HEX0</th>
+                    <th>LCD Display</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="hex74">0000</td>
+                    <td id="hex30">0000</td>
+                    <td>
+                        <canvas id="lcd" width="340" height="60"></canvas>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 
-    <table>
+    <table style="float:left">
         <tbody>
             <tr id="num_labels">
                 <td></td>
@@ -83,26 +108,28 @@
         </tbody>
     </table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>HEX7-HEX4</th>
-                <th>HEX3-HEX0</th>
-                <th>LCD Display</th>
-            </tr>
-        </thead>
+    <table style="float:right">
         <tbody>
             <tr>
-                <td id="hex74">0000</td>
-                <td id="hex30">0000</td>
+                <th>PS/2 Keyboard</th>
+                <th>Serial Console Input</th>
+            </tr>
+            <tr>
                 <td>
-                    <canvas id="lcd" width="340" height="60"></canvas>
+                    <textarea id="key_input"
+                        placeholder="Type your keyboard input in here"
+                    ></textarea>
+                </td>
+                <td>
+                    <textarea id="serial_input_str"
+                        placeholder="Type here to send an array of ASCII values over serial. Press ENTER to send."
+                        ></textarea>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table>
+    <table style="float:left">
         <thead>
             <tr>
                 <th>VGA Monitor</th>
@@ -116,22 +143,6 @@
                 </td>
                 <td>
                     <textarea id="console" readonly></textarea>
-                </td>
-            </tr>
-            <tr>
-                <th>PS/2 Keyboard</th>
-                <th>Serial Console Input</th>
-            </tr>
-            <tr>
-                <td>
-                    <textarea id="key_input"
-                        placeholder="Type your keyboard input in here">
-                    </textarea>
-                </td>
-                <td>
-                    <textarea id="serial_input_str"
-                        placeholder="Type here to send an array of ASCII values over serial. Press ENTER to send.">
-                    </textarea>
                 </td>
             </tr>
         </tbody>

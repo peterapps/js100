@@ -33,6 +33,7 @@ function cpuCycle(){
         serialReceiveDriver();
         lcdDriver();
         cameraDriver();
+        micDriver();
         if (!running) break;
     }
     if (audioBuffer.length > 0){

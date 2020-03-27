@@ -22,8 +22,8 @@ This is not actually a port of ase100, but rather an emulator of the E100 built 
 - [x] USB mouse
 - [x] LCD display
 - [x] Camera
+- [x] Microphone (but buggy)
 
 # TODO
-- [ ] Microphone
 - [ ] Fast Fourier Transform
 - [ ] Fix speaker output

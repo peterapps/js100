@@ -27,6 +27,7 @@ function camVideoInit(){
             cam_active = true;
         }).catch(function(err){
             message("There was an error loading the camera.");
+            running = false;
         });
     } else {
         message("Could not load camera.");
