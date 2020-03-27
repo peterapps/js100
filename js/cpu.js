@@ -28,6 +28,8 @@ function cpuCycle(){
         touchDriver();
         sdcardDriver();
         audioDriver();
+        keyboardDriver();
+        serialReceiveDriver();
         if (!running) break;
     }
     if (audioBuffer.length > 0){

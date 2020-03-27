@@ -5,6 +5,8 @@ window.addEventListener("load", function(){
     basicIOInit();
     touchInit();
     audioInit();
+    keyboardInit();
+    serialReceiveInit();
 }, false);
 
 function handleSubmit(event){

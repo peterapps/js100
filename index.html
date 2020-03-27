@@ -15,6 +15,7 @@
     <script type="text/javascript" src="./js/touch.js"></script>
     <script type="text/javascript" src="./js/sdcard.js"></script>
     <script type="text/javascript" src="./js/audio.js"></script>
+    <script type="text/javascript" src="./js/keyboard.js"></script>
 
     <script type="text/javascript" src="./js/cpu.js"></script>
 
@@ -99,7 +100,7 @@
         <thead>
             <tr>
                 <th>VGA Monitor</th>
-                <th>Serial Console</th>
+                <th>Serial Console Output</th>
             </tr>
         </thead>
         <tbody>
@@ -109,6 +110,22 @@
                 </td>
                 <td>
                     <textarea id="console" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>PS/2 Keyboard</th>
+                <th>Serial Console Input</th>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="key_input"
+                        placeholder="Type your keyboard input in here">
+                    </textarea>
+                </td>
+                <td>
+                    <textarea id="serial_input_str"
+                        placeholder="Type here to send an array of ASCII values over serial. Press ENTER to send.">
+                    </textarea>
                 </td>
             </tr>
         </tbody>

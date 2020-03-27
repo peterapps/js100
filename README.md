@@ -17,12 +17,12 @@ This is not actually a port of ase100, but rather an emulator of the E100 built 
 - [x] Serial console send
 - [x] Touchscreen
 - [x] Speaker (but buggy)
+- [x] PS/2 keyboard
+- [x] Serial receive
 
 # TODO
-- [ ] PS/2 keyboard
 - [ ] USB mouse
 - [ ] LCD display
-- [ ] Serial receive
 - [ ] Fix speaker output
 - [ ] Camera
 - [ ] Microphone
