@@ -18,6 +18,6 @@ function sdramDriver(){
             sdram_data[address] = memory[0x80000034];
         }
 
-        memory[0x80000061] = 1; // sdram_response == 1
+        memory[0x80000031] = 1; // sdram_response == 1
     }
 }

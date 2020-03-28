@@ -20,7 +20,7 @@ function handleRun(){
 }
 
 function cpuCycle(){
-    for (var i = 0; i < 133; ++i){
+    for (var i = 0; i < 1330; ++i){
         executeOp();
         basicIODriver();
         vgaDriver();
