@@ -2,9 +2,9 @@ var sdram_data = [];
 
 function sdramInit(){
     sdram_data = new Array(20000); // Should be 33554432 but that lags
-    for (var i = 0; i < sdram_data.length; ++i){
+    /*for (var i = 0; i < sdram_data.length; ++i){
         sdram_data[i] = 0;
-    }
+    }*/
 }
 
 function sdramDriver(){

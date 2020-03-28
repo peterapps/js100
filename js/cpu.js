@@ -20,7 +20,7 @@ function handleRun(){
 }
 
 function cpuCycle(){
-    for (var i = 0; i < 1330; ++i){
+    for (var i = 0; i < 2500; ++i){
         executeOp();
         basicIODriver();
         vgaDriver();
@@ -57,6 +57,7 @@ function executeOp(){
     switch (op){
         case 0: // halt
             running = false;
+            iar -= 4;
             break;
         case 1: // add
             memory[arg1] = memory[arg2] + memory[arg3];

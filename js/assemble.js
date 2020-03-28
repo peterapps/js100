@@ -8,8 +8,7 @@ function message(txt){
     //console.log(txt);
 }
 
-function assemble(file_txt){
-    var lines = file_txt.split("\n"); // Lines of assembly file
+function assemble(lines){
 
     mif = []; // Memory image
     labels = {}; // Dictionary mapping labels to addresses

@@ -40,18 +40,19 @@
             <thead>
                 <tr>
                     <th>
-                        Main ".e" file
+                        Source directory
                     </th>
-                    <th>All other ".e" files</th>
+                    <th>Main .e file</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>
-                        <input type="file" id="main_file" accept=".e" />
+                        <input type="file" id="directory" webkitdirectory directory multiple />
                     </td>
                     <td>
-                        <input type="file" id="supp_files" accept=".e" multiple>
+                        <span id="dir_prefix"></span>/
+                        <input type="text" id="main_path" placeholder="main.e" />
                     </td>
                 </tr>
                 <tr>
@@ -74,8 +75,8 @@
         <table style="float:right">
             <thead>
                 <tr>
-                    <th>HEX7-HEX4</th>
-                    <th>HEX3-HEX0</th>
+                    <th>HEX 7-4</th>
+                    <th>HEX 3-0</th>
                     <th>LCD Display</th>
                 </tr>
             </thead>
